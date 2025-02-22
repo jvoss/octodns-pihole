@@ -1,0 +1,11 @@
+{
+    "config": {
+      "dns": {
+        "cnameRecords": [
+          "dont-touch-me.other.tld.,target.other.tld.",
+          "cname.unit.tests.,unit.tests."
+        ]
+      }
+    },
+    "took": 0.000026464462280273438
+}

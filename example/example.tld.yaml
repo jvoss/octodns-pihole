@@ -1,0 +1,9 @@
+---
+cname1:
+  type: CNAME
+  value: test1.example.tld.
+test1:
+  - type: A
+    value: 192.0.2.1
+  - type: AAAA
+    value: 2001:db8::1

@@ -1,0 +1,21 @@
+---
+providers:
+  yaml:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./example
+    default_ttl: 3600
+    enforce_order: True
+  pihole:
+    class: octodns_pihole.PiholeProvider
+    url: http://127.0.0.1
+    password: "correct horse battery staple"  # for example only! use env/PIHOLE_PASSWORD
+    totp:                  # optional - required when 2FA is enabled
+    tls_verify: false      # default true
+    strict_supports: false # ignore unsupported records
+
+zones:
+  example.tld.:
+    sources:
+      - yaml
+    targets:
+      - pihole

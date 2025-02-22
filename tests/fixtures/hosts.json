@@ -1,0 +1,16 @@
+{
+    "config": {
+      "dns": {
+        "hosts": [
+          "1.1.1.1 dont-touch-me-a.other.tld.",
+          "2001:db8:: dont-touch-me-aaaa.other.tld.",
+          "1.2.3.4 unit.tests.",
+          "1.2.3.5 unit.tests.",
+          "2.2.3.6 www.unit.tests.",
+          "2.2.3.6 www.sub.unit.tests.",
+          "2601:644:500:e210:62f8:1dff:feb8:947a aaaa.unit.tests."
+        ]
+      }
+    },
+    "took": 0.000026941299438476562
+}
